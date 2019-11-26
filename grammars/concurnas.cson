@@ -1,0 +1,288 @@
+'fileTypes' : [
+  'conc'
+]
+'name' : 'concurnas'
+'patterns' : [
+  {
+    'include' : '#main'
+  }
+]
+'scopeName' : 'source.concurnas'
+'uuid' : ''
+'repository' : {
+  'main' : {
+    'patterns' : [
+      {
+        'include' : '#multi_line_comment'
+      }
+      {
+        'match' : '(//.*)'
+        'name' : 'comment.concurnas'
+      }
+      {
+        'include' : '#integers'
+      }
+      {
+        'include' : '#floatingPoints'
+      }
+      {
+        'match' : '\\b(void|int|long|short|float|double|boolean|bool|byte|char|lambda|size_t)\\b'
+        'name' : 'entity.name.type.concurnass.concurnas'
+      }
+      {
+        'match' : '\\b(import|from|assert|as|is|new|isnot)\\b'
+        'name' : 'keyword.control.concurnass.concurnas'
+      }
+      {
+        'match' : '\\b(private|public|package|protected)\\b'
+        'name' : 'storage.modifier.concurnas.concurnas'
+      }
+      {
+        'match' : '\\b(true|false|null|this|super)\\b'
+        'name' : 'constant.language.concurnass.concurnas'
+      }
+      {
+        'match' : '\\b(fun|def|gpudef|gpukernel|init|annotation|class|trait|enum|await|transient|extends|implements)\\b'
+        'name' : 'keyword.control.concurnass.concurnas'
+      }
+      {
+        'match' : '\\b(global|local|constant|val|var|typedef|abstract|override)\\b'
+        'name' : 'storage.modifier.concurnas.concurnas'
+      }
+      {
+        'match' : '\\b(\\.\\.|\\.|in|out|del|default|sizeof|trans|while|for|using|match|with|if|elif|else|throw|try|catch|finally|onchange|every|async|pre|post|loop|also|open|closed|sync|parfor|parforsync|return|break|continue|actor|in|of|changed|match|case)\\b'
+        'name' : 'keyword.control.concurnass.concurnas'
+      }
+      {
+        'match' : '(&|@|==|&==|<>|&<>|>|<|==>|==<|:|<=|<-|->|\\.\\.\\.)'
+        'name' : 'keyword.operator.concurnas.concurnas'
+      }
+      {
+        'match' : '\\b(comp|mod|or|and|not|band|bor|bxor)\\b'
+        'name' : 'keyword.operator.concurnas.concurnas'
+      }
+      {
+        'match' : '\\b(inject|provider|provide|single|shared)\\b'
+        'name' : 'keyword.control.concurnass.concurnas'
+      }
+      {
+        'match' : '\\b(nodefault|unchecked)\\b'
+        'name' : 'keyword.control.concurnass.concurnas'
+      }
+      {
+        'match' : '(\\^|\\+|-|~|\\*|/|>>|<<|>>>|\\*\\*|!|<|>)'
+        'name' : 'keyword.operator.concurnas.concurnas'
+      }
+      {
+        'match' : '(=>|\\?|\\+=|\\*=|\\*\\*=|-=|/=|or=|and=|bxor=|bor=|band=|mod=|>>=|<<=|>>>=)'
+        'name' : 'keyword.operator.concurnas.concurnas'
+      }
+      {
+        'begin' : '(")'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'string.quoted.concurnas'
+          }
+        }
+        'patterns' : [
+          {
+            'include' : '#main__1'
+          }
+        ]
+        'end' : '(")'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'string.quoted.concurnas'
+          }
+        }
+      }
+      {
+        'begin' : '(\')'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'string.quoted.concurnas'
+          }
+        }
+        'patterns' : [
+          {
+            'include' : '#main__2'
+          }
+        ]
+        'end' : '(\')'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'string.quoted.concurnas'
+          }
+        }
+      }
+      {
+        'begin' : '(r")'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'string.regexp.concurnas'
+          }
+        }
+        'patterns' : [
+          {
+            'include' : '#main__3'
+          }
+        ]
+        'end' : '(")'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'string.regexp.concurnas'
+          }
+        }
+      }
+      {
+        'begin' : '(r\')'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'string.regexp.concurnas'
+          }
+        }
+        'patterns' : [
+          {
+            'include' : '#main__4'
+          }
+        ]
+        'end' : '(\')'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'string.regexp.concurnas'
+          }
+        }
+      }
+      {
+        'begin' : '(\\|\\|)'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'string.regexp.concurnas'
+          }
+        }
+        'patterns' : [
+          {
+            'include' : '#main__5'
+          }
+        ]
+        'end' : '(\\|\\|)'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'string.regexp.concurnas'
+          }
+        }
+      }
+    ]
+  }
+  'floatingPoints' : {
+    'patterns' : [
+      {
+        'match' : '(([1-9][0-9]*|0[0-9]*)?\\.[0-9]+((e|E)(\\+|-)?[0-9]+)?(f|F|d|D)?)'
+        'name' : 'constant.numeric.concurnass.concurnas'
+      }
+      {
+        'match' : '(([0-9][1-9]*)?((e|E)(\\+|-)?[0-9]+)(f|F|d|D)?)'
+        'name' : 'constant.numeric.concurnass.concurnas'
+      }
+    ]
+  }
+  'integers' : {
+    'patterns' : [
+      {
+        'match' : '(\\b0(B|b)\\d+(l|L|s|S|f|F|d|D)?)'
+        'name' : 'constant.numeric.concurnass.concurnas'
+      }
+      {
+        'match' : '(\\b0(X|x)([a-f\\x{007c}0-9\\x{007c}A-F])+(l|L|s|S|f|F|d|D)?)'
+        'name' : 'constant.numeric.concurnass.concurnas'
+      }
+      {
+        'match' : '(\\b[0-9][0-9]*(l|L|s|S|f|F|d|D)?)'
+        'name' : 'constant.numeric.concurnass.concurnas'
+      }
+    ]
+  }
+  'main__1' : {
+    'patterns' : [
+      {
+        'match' : '(\\\\(?:\\\\|"))'
+        'name' : 'string.quoted.concurnas'
+      }
+      {
+        'match' : '([^\\x{0022}\\x{005c}]+)'
+        'name' : 'string.quoted.concurnas'
+      }
+    ]
+  }
+  'main__2' : {
+    'patterns' : [
+      {
+        'match' : '(\\\\(?:\\\\|\'))'
+        'name' : 'string.quoted.concurnas'
+      }
+      {
+        'match' : '([^\\x{0027}\\x{005c}]+)'
+        'name' : 'string.quoted.concurnas'
+      }
+    ]
+  }
+  'main__3' : {
+    'patterns' : [
+      {
+        'match' : '(\\\\(?:\\\\|"))'
+        'name' : 'string.regexp.concurnas'
+      }
+      {
+        'match' : '([^\\x{0022}\\x{005c}]+)'
+        'name' : 'string.regexp.concurnas'
+      }
+    ]
+  }
+  'main__4' : {
+    'patterns' : [
+      {
+        'match' : '(\\\\(?:\\\\|\'))'
+        'name' : 'string.regexp.concurnas'
+      }
+      {
+        'match' : '([^\\x{0027}\\x{005c}]+)'
+        'name' : 'string.regexp.concurnas'
+      }
+    ]
+  }
+  'main__5' : {
+    'patterns' : [
+      {
+        'match' : '(\\\\(?:\\\\|(\\|\\|)))'
+        'name' : 'string.regexp.concurnas'
+      }
+      {
+        'match' : '([^\\x{0028}\\|\\|\\x{0029}\\x{005c}]+)'
+        'name' : 'string.regexp.concurnas'
+      }
+    ]
+  }
+  'multi_line_comment' : {
+    'patterns' : [
+      {
+        'begin' : '(/\\*)'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'comment.concurnas'
+          }
+        }
+        'contentName' : 'comment.concurnas'
+        'end' : '(\\*/)'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'comment.concurnas'
+          }
+        }
+      }
+    ]
+  }
+  'multi_line_comment__1' : {
+    'patterns' : [
+    ]
+  }
+}

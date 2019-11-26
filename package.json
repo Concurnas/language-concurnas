@@ -1,0 +1,22 @@
+
+{
+  "name": "language-concurnas",
+  "version": "1.13.108",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "description": "Atom plugin implementing support for the Concurnas programming language",
+  "keywords": [
+    "tree-sitter"
+  ],
+  "homepage": "https://github.com/Concurnas/language-concurnas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Concurnas/language-concurnas.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Concurnas/language-concurnas/issues"
+  }
+}
