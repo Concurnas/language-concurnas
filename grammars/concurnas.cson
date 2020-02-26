@@ -46,7 +46,7 @@
         'name' : 'keyword.control.concurnass.concurnas'
       }
       {
-        'match' : '\\b(global|local|constant|val|var|typedef|abstract|override)\\b'
+        'match' : '\\b(global|local|constant|val|var|typedef|abstract|override|lazy)\\b'
         'name' : 'storage.modifier.concurnas.concurnas'
       }
       {
